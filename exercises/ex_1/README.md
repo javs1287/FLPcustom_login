@@ -1,39 +1,69 @@
-# Create an SAP Fiori Launchpad Custom Plugin with SAP Business Application Studio and SAP S/4HANA Embedded Steampunk
+# Basic preparation and uploading images to the MIME Repository
 
 ## Description
 
-This repository contains the material for creating a custom SAP Fiori Launchpad plugin with SAP Business Application Studio along with instructions on how to use Embedded Steampunk in SAP S/4HANA 2022 or higher to create custom developer extensibility services for consumption in this custom Fiori Launchpad Plugin.  
+In this section you will find the steps to setup your development workspace and prepare to customize the sAP Fiori Launchpad Logon page.  
 
-## Overview
+## Create a new ABAP Project in ADT (Eclipse)
+You should start by creating a new ABAP project for your SAP S/4HANA system. To do this follow the next steps:
 
-In this section we will describe the main activities to be run for creating a custom Fiori Launchpad Plugin that consumes a custom service in Embedded Steampunk in SAP S/4HANA 2022 or higher.
+1. Create a new project in ADT.
 
-The objective of creating this custom Fiori Launchpad plugin is for your end-users to be able to quickly distinguish which system and client they have logon to in the system. The information will be displayed in the SAP Fiori Launchpad header title section and through this custom Fiori plugin the user will see the System ID along with client number information as shown in the image.
+  ![New Project](images/new_project.png)
 
-![Plugin Overview](images/overview.png)
+2. Select the backend system you will connect to and click **Next**.
 
-## Prerequisites
+  ![Select System](images/select_system.png)
 
-You need to ensure the fulfillment of all of the following points for you to successfully run this exercise:
+3. Confirm system connection parameters (or edit as needed) and click **Next**.
 
-* You have installed the _latest_ ABAP Development Tools (ADT), see [ABAP Development Tools](https://tools.hana.ondemand.com/#abap).
-* You have an SAP S/4HANA 2022 system deployed in an on-premise Sandbox or via SAP Cloud Application Library (CAL).
-* You have fully configured SAP Fiori and have developer access to the backend system where embedded SAP Fiori is deployed.
-* You have fully setup Cloud Connector and created a destination to your backend S/4HANA system.
-* You have fully setup SAP Business application Studio including the setup of Development Spaces.
-* You have access to creation+read access of transport requests in your SAP Backend system for both customizing and workbench requests.
+  **NOTE - In this screen you may also create a new connection from scratch.**
 
-## Exercises
+  ![System Details](images/review_details.png)
 
-Follow these steps to build a custom SAP Fiori Launchpad Plugin consuming Embedded Steampunk Services.
-- [Understanding SAP S/4HANA Embedded Steampunk](exercises/ex_0/)
-- [Exercise 1 - Setting up Embedded Steampunk](exercises/ex_1/)
-- [Exercise 2 - Creating a backend function module to expose system details](exercises/ex_2/)
-- [Exercise 3 - Creating an HTTP Service](exercises/ex_3/)
-- [Exercise 4 - Creating and Deploying a Fiori Launchpad Plugin in SAP Business Application Studio](exercises/ex_4/)
-- [Exercise 5 - Activating Plug-in on the on-premise ABAP Platform](exercises/ex_5/)
-- [Exercise 6 - Testing your Custom Fiori Launchpad Plugin](exercises/ex_6/)
+4. Enter your system Id to setup a connection to the backend system and click **Next**
+
+  ![Login](images/enter_systemId.png)
+
+5. Setup a friendly name for your ABAP project (for example: <SID>_Demo_FLPplugin) and click **Finish**.
+
+  ![Setup Friendly Name](images/setup_name.png)
+
+6. Once all steps are run you will find your new project in the **Project Explorer** section in ADT.
+
+  ![Confirm](images/confirm_new.png)
+
+## Creating a development package
+
+7. In **Project Explorer**, expand **Favorite Packages** and right-click on your recently created package structure. From the menu select **New >> ABAP Package**
+
+  ![Step21](images/step21.png)
+
+8. Enter the following information and click **Next**:
+  * Name: **<< Your package name >>** (for example: ZCUSTOM_OBJECTS4STMPNK).
+  * Description: **<< Your package description >>** (for example: Custom Objects for Embedded Steampunk).
+  * Add to favorite packages: **Inactive**
+  * Superpackage: **<< Your package structure name >>** (this should be the same name you defined in Step 17 - for example: ZEMBEDDED_STEAMPUNK).
+  * Package Type: **Development**
+
+  ![Step22](images/step22.png)
+
+9. Select an existing transport request or create a new one to save your changes and click **Finish**
+
+  ![Step19](images/step19.png)
+
+10. Once created, package details will be displayed in the screen.
+
+  **NOTE** - Try expanding the structure hierarchy in **Project Explorer** as your recently created package will be used in the following sections, additionally, you should notice that the ABAP Language version has already been setup for your development package. This setting will restrict your ABAP code to only consume cloud-released objects.
+
+  ![Step24](images/step24.png)
+
+## Uploading images to MIME repository
+
+11.
 
 
-## License
-Copyright (c) 2023 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the Apache Software License, version 2.0 except as noted otherwise in the [LICENSE](licenses/Apache-2.0.txt) file.
+## Next Steps
+In the next section you will create a custom BSP so you can test the logon class without disturbing end-users.
+
+To continue with this exercise go to [Exercise 2](../ex_2)
