@@ -1,0 +1,44 @@
+label.sapMLabel {
+  color: #FFFFFF;
+  font-weight: bold;
+  background: #031cfc;
+}
+
+button#LOGIN_LINK {
+    font-weight: bold;
+}
+
+button#CHANGE_PASSWORD_LINK {
+    text-shadow: 1px 1px rgb(3 28 252);
+    font-weight: bold;
+}
+
+label#LANGUAGE_LABEL {
+    font-weight: bold;
+}
+
+label#USERNAME_LABEL {
+    color: white;
+    font-weight: bold;
+}
+
+label#PASSWORD_LABEL {
+  color: white;
+  font-weight: bold;
+}
+
+label#NEW_PASSWORD_LABEL {
+  color: white;
+  font-weight: bold;
+}
+
+label#CONFIRM_PASSWORD_LABEL {
+  color: white;
+  font-weight: bold;
+}
+
+button#CANCEL_LINK {
+  color: #FFFFFF;
+  text-shadow: 1px 1px rgb(3 28 252);
+  font-weight: bold;
+}

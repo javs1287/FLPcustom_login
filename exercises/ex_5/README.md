@@ -1,45 +1,52 @@
-# Deploying your custom SAP Fiori Launchpad logon page
+# Adjusting CSS, Copyright Text and Change Password Page
 
 ## Description
 
-In this section you will find the steps on how to activate your custom logon class for the SAP Fiori Launchpad now that you have made sure that everything works correctly
+In this section you will find the steps to add custom CSS to your logon page and adjust the copyright text.
 
-## Adjusting the SAP Fiori Launchpad logon page
+## Importing JS Code, CSS classes and adjusting ABAP class.
 
-49. In transaction SICF, search for **Service Name = "FLP"** and double click on the entry.
+49. Download sample code [zlogin_ext.js](sources/zlogin_ext.js) and replace the existing **MIME object** in path **SAP >> PUBLIC >> BC >> UI2 >> logon >> fiori3 >> js**
 
   ![Step49](images/step49.png)
 
-50. Once displayed, switch to **Edit** mode.
+50. Download sample code [zcustom.css](sources/zcustom.css) and import it as a new **MIME object** in path **SAP >> PUBLIC >> BC >> UI2 >> logon >> fiori3**
 
   ![Step50](images/step50.png)
 
-51. Navigate to **Error pages**, activate the **System Logon** radio button and click on **Configuration**
+51. Copy **ALL** code from the updated sample class [ZCL_CUSTOM_LOGIN](sources/ZCL_CUSTOM_LOGIN.ABAP) into your own class. **Save** and **Activate**
 
   ![Step51](images/step51.png)
 
-52. In the **System Logon Configuration** menu, activate radio button: **Define Service-Specific Settings** followed by activating radio button **Custom Implementation** and entering the name of your custom class (for example: **ZCL_CUSTOM_LOGIN**). Once done, click on **Ok** button and accept all messages.
+## What does this code do?
+
+In this section you will find a brief explanation of the custom code you've added.
+
+### zlogin_ext.js
 
   ![Step52](images/step52.png)
 
-53. Once changes have been done, click on **Save**.
+  52. In this updated code we are first validating that the elements in DOM that belong to the Password and Change Password texts exists, once we confirm they exist, we are changing the text color to White.
 
-  **NOTE** - You will be prompted for a transport request
+### zcustom.css
 
   ![Step53](images/step53.png)
 
-54. Logon to the Fiori Launchpad, you should now see the new custom logon page.
+  53. In this custom CSS, we are defining the style of each of the elements by setting the selector name of the objects and specifying the styles for color, text shadows and font weights to each one of the objects in the screen. This way we override the standard styles.
 
-  * Launchpad URL: **https://< your_system_host >:< your_system_port >/sap/bc/ui2/flp**
-  * Launchpad transaction: **/n/UI2/FLP**
+### ZCL_CUSTOM_LOGIN - ABAP
 
   ![Step54](images/step54.png)
 
-## How to adapt to your own images and updating JS code?
+  54. In this new version of the code we are adding two lines, the first one, where we change the text in the copyright section and the second, where we indicate the logon page to load our custom CSS library.
 
-If you've reached this section you are probably wondering how you could adapt the content to show your own background and company logos or how to adapt the custom JS code if needed. Fortunately, this is very easy as you can adapt the ABAP code as needed and for the images and JS code you can update the code and images by using the "Upload and Replace" feature in the MIME repository browser from transaction SE80.
+## Testing the modifications
+
+55. Go back to your browser and refresh the BSP page, switch to change password screen and all label texts should be in white color. You should also find a custom text in the copyright section.
 
   ![Step55](images/step55.png)
 
+## Next Steps
+In the next section you will deploy your custom logon class to the SAP Fiori Launchpad.
 
-We hope you enjoyed this step-by-step document!
+To continue with this exercise go to [Exercise 6](../ex_6)
