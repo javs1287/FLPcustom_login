@@ -21,7 +21,7 @@ In this section you will find the steps to create a custom class and add code to
 
   ![Step10](images/step10.png)
 
-36. Copy **ALL** code from our sample class [zcl_custom_login](sources/zcl_custom_login.abap) into your recently created class. **Save** and **Activate** your class.
+36. Copy **ALL** code from our sample class [zcl_custom_login](sources/ZCL_CUSTOM_LOGIN.abap) into your recently created class. **Save** and **Activate** your class.
 
   ![Step36](images/step36.png)
 
