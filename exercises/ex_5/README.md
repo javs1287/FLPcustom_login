@@ -36,7 +36,7 @@ In this section you will find a brief explanation of the custom code you've adde
 
 ### ZCL_CUSTOM_LOGIN - ABAP
 
-  ![Step54](images/step54.png)
+  ![Step51](images/step51.png)
 
   54. In this new version of the code we are adding two lines, the first one, where we change the text in the copyright section and the second, where we indicate the logon page to load our custom CSS library.
 

@@ -6,40 +6,40 @@ In this section you will find the steps on how to activate your custom logon cla
 
 ## Adjusting the SAP Fiori Launchpad logon page
 
-49. In transaction SICF, search for **Service Name = "FLP"** and double click on the entry.
+56. In transaction SICF, search for **Service Name = "FLP"** and double click on the entry.
 
-  ![Step49](images/step49.png)
+  ![Step56](images/step56.png)
 
-50. Once displayed, switch to **Edit** mode.
+57. Once displayed, switch to **Edit** mode.
 
-  ![Step50](images/step50.png)
+  ![Step57](images/step57.png)
 
-51. Navigate to **Error pages**, activate the **System Logon** radio button and click on **Configuration**
+58. Navigate to **Error pages**, activate the **System Logon** radio button and click on **Configuration**
 
-  ![Step51](images/step51.png)
+  ![Step58](images/step58.png)
 
-52. In the **System Logon Configuration** menu, activate radio button: **Define Service-Specific Settings** followed by activating radio button **Custom Implementation** and entering the name of your custom class (for example: **ZCL_CUSTOM_LOGIN**). Once done, click on **Ok** button and accept all messages.
+59. In the **System Logon Configuration** menu, activate radio button: **Define Service-Specific Settings** followed by activating radio button **Custom Implementation** and entering the name of your custom class (for example: **ZCL_CUSTOM_LOGIN**). Once done, click on **Ok** button and accept all messages.
 
-  ![Step52](images/step52.png)
+  ![Step59](images/step59.png)
 
-53. Once changes have been done, click on **Save**.
+60. Once changes have been done, click on **Save**.
 
   **NOTE** - You will be prompted for a transport request
 
-  ![Step53](images/step53.png)
+  ![Step60](images/step60.png)
 
-54. Logon to the Fiori Launchpad, you should now see the new custom logon page.
+61. Logon to the Fiori Launchpad, you should now see the new custom logon page.
 
   * Launchpad URL: **https://< your_system_host >:< your_system_port >/sap/bc/ui2/flp**
   * Launchpad transaction: **/n/UI2/FLP**
 
-  ![Step54](images/step54.png)
+  ![Step61](images/step61.png)
 
-## How to adapt to your own images and updating JS code?
+## How to adapt to your own images or updating CSS classes and JS code?
 
 If you've reached this section you are probably wondering how you could adapt the content to show your own background and company logos or how to adapt the custom JS code if needed. Fortunately, this is very easy as you can adapt the ABAP code as needed and for the images and JS code you can update the code and images by using the "Upload and Replace" feature in the MIME repository browser from transaction SE80.
 
-  ![Step55](images/step55.png)
+  ![Step62](images/step62.png)
 
 
 We hope you enjoyed this step-by-step document!
