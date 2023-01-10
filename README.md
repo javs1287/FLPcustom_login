@@ -26,7 +26,7 @@ You need to ensure the fulfillment of all of the following points for you to suc
 
 Follow these steps to customize your SAP Fiori Launchpad Logon page.
 - [Exercise 1 - Basic preparation and uploading images to the MIME Repository](exercises/ex_1/)
-- [Exercise 2 - Creating a custom BSP for testing](exercises/ex_2/)
+- [Exercise 2 - (Optional) Creating a custom BSP for testing](exercises/ex_2/)
 - [Exercise 3 - Creating a custom class for redefinition of standard logon class](exercises/ex_3/)
 - [Exercise 4 - Creating and calling custom Javascript](exercises/ex_4/)
 - [Exercise 5 - Deploying your custom SAP Fiori Launchpad logon page](exercises/ex_5/)
