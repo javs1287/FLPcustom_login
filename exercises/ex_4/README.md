@@ -37,7 +37,7 @@ In this section you will find a brief explanation of the custom code you've adde
   ![Step48](images/step48.png)
 
 ## Next Steps
-Despite your logon page already looks nice, you will still find the copyright text is not visible, additionally, if you navigate to the change password screen, no texts ate visible. In the next section you will adjust all these objects by implementing custom CSS classes.
+Despite your logon page already looks nice, you will still find the copyright text is not visible, additionally, if you navigate to the change password screen, no texts are visible. In the next section you will adjust all these objects by implementing custom CSS classes.
 
   ![Missing](images/missing.png)
 
