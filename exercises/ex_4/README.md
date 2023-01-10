@@ -30,7 +30,7 @@ In this section you will find a brief explanation of the custom code you've adde
 
   47. In this new version of the code we are only adding one line, where we tell the login procedure to include our javascript file, hence including our new custom logic.
 
-## Testing the modifications.
+## Testing the modifications
 
 48. Go back to your browser and refresh the BSP page. You should now see the new custom logon page and texts for "Language" and "Change Password" should be visible in white color
 
