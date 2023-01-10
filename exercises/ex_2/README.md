@@ -52,7 +52,7 @@ In this section you will find the steps to create a test BSP page so you can try
 
   **NOTE** - DO NOT LOGIN if prompted for authentication, for now we only want to confirm the object is active.
 
-  ![Step33](images/step33.png)
+  ![Step32Info](images/step32_info.png)
 
 ## Next Steps
 In the next section you will create a custom class to start adapting the logon page.
