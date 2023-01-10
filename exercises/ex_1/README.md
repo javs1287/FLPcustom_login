@@ -37,31 +37,81 @@ You should start by creating a new ABAP project for your SAP S/4HANA system. To 
 
 7. In **Project Explorer**, expand **Favorite Packages** and right-click on your recently created package structure. From the menu select **New >> ABAP Package**
 
-  ![Step21](images/step21.png)
+  ![Step7](images/step7.png)
 
 8. Enter the following information and click **Next**:
-  * Name: **<< Your package name >>** (for example: ZCUSTOM_OBJECTS4STMPNK).
-  * Description: **<< Your package description >>** (for example: Custom Objects for Embedded Steampunk).
-  * Add to favorite packages: **Inactive**
-  * Superpackage: **<< Your package structure name >>** (this should be the same name you defined in Step 17 - for example: ZEMBEDDED_STEAMPUNK).
+  * Name: **<< Your package name >>** (for example: ZCUSTOM_LOGON).
+  * Description: **<< Your package description >>** (for example: FLP Custom Logon Page).
+  * Add to favorite packages: **Active**
+  * Superpackage: **<< NONE >>**
   * Package Type: **Development**
 
-  ![Step22](images/step22.png)
+  ![Step8](images/step8.png)
 
-9. Select an existing transport request or create a new one to save your changes and click **Finish**
+9. Enter the following information and click **Next**:
+  * Software Component: **HOME>**
 
-  ![Step19](images/step19.png)
+  ![Step9](images/step9.png)
 
-10. Once created, package details will be displayed in the screen.
+10. Select an existing transport request or create a new one to save your changes and click **Finish**
 
-  **NOTE** - Try expanding the structure hierarchy in **Project Explorer** as your recently created package will be used in the following sections, additionally, you should notice that the ABAP Language version has already been setup for your development package. This setting will restrict your ABAP code to only consume cloud-released objects.
+  ![Step10](images/step10.png)
 
-  ![Step24](images/step24.png)
+11. Once created, package details will be displayed in the screen.
+
+  **NOTE** - the package should also be added yo your favorites list.
+
+  ![Step11](images/step11.png)
 
 ## Uploading images to MIME repository
 
-11.
+12. Click on **Open SAP GUI** button, select your project and click **Ok**.
 
+  ![Step12](images/step12.png)
+
+13. Run transaction **/nSE80**.
+
+  ![Step13](images/step13.png)
+
+14. Open MIME repository.
+
+  ![Step14](images/step14.png)
+
+  **NOTE** - If you cannot see **MIME REpository** go to **Utilities >> Settings >> Workbench (General)**, select **MIME Repository** and click **Ok** button
+
+  ![Step14trbl](images/step14trbl.png)
+
+15. Navigate to path **SAP >> PUBLIC >> BC >> UI2 >> logon >> img**.
+
+  ![Step15](images/step15.png)
+
+16. Right-click on folder **img** and select option **Import MIME Objects**
+
+  ![Step16](images/step16.png)
+
+17. Download and open file [zcompany_icon.png](sources/zcompany_icon.png).
+
+  ![Step17](images/step17.png)
+
+18. Use default values and click on **Save**. (This will import the file into the server)
+
+  ![Step18](images/step18.png)
+
+19. Enter the package where the objects will be stored (for example: ZCUSTOM_LOGON) and click on **Save**.
+
+  ![Step19](images/step19.png)
+
+20. Select a transport request and continue.
+
+  ![Step20](images/step20.png)
+
+21. Wait for the upload to conclude. You should find your new file in the folder structure once upload is successful.
+
+  ![Step21](images/step21.png)
+
+22. Repeat steps 16-21 for file [zbkg_img.png](sources/zbkg_img.png). You should find both files in the folder structure once upload is successful.
+
+  ![Step22](images/step22.png)
 
 ## Next Steps
 In the next section you will create a custom BSP so you can test the logon class without disturbing end-users.
