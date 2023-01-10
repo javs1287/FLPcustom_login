@@ -8,7 +8,7 @@ This repository contains the material for you to customize SAP Fiori Launchpad l
 
 In this section we will describe the main activities to be run for customizing your SAP Fiori Launchpad logon page in SAP S/4HANA 2020 or higher.
 
-The objective customizing this logon page is for your end-users to perceive a different user experience from the moment they have to logon to the system. The customized logon page will featue an iinovative background image, your company logo and easy to read text as shown in the image.
+The objective customizing this logon page is for your end-users to perceive a different user experience from the moment they have to logon to the system. The customized logon page will feature an innovative background image, your company logo and easy to read text as shown in the image.
 
 ![Customized Logon Page Overview](images/overview.png)
 
